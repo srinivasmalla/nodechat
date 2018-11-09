@@ -9,12 +9,12 @@ server.listen(port);
 
 
 app.get('/',function(req,res){
-res.sendFile(__dirname + '/index.html');
+res.sendFile(__dirname + '/admin.html');
 });
 
 
-app.get('/receiver',function(req,res){
-res.sendFile(__dirname + '/receiver.html');
+app.get('/score',function(req,res){
+res.sendFile(__dirname + '/score.html');
 });
 
 
