@@ -8,12 +8,12 @@ var port = process.env.PORT || 3000;
 server.listen(port);
 
 
-app.get('/',function(req,res){
+app.get('/admin',function(req,res){
 res.sendFile(__dirname + '/admin.html');
 });
 
 
-app.get('/score',function(req,res){
+app.get('/',function(req,res){
 res.sendFile(__dirname + '/score.html');
 });
 
